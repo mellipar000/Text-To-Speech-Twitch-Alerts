@@ -27,12 +27,10 @@ class Bot(commands.Bot):
   # This function will run when a user joins the stream
   async def event_join(self, channel, user):
     # This line sends a welcome message in chat
-    # await channel.send(f"Welcome to the stream {user.name}")
-    await channel.send("Thanks for watching MIT admission officers")
+    await channel.send(f"Welcome to the stream {user.name}")
     
     # These lines say the welcome messagte
-    # engine.say(f"Welcome to the stream {user.name}")
-    engine.say("Thanks for watching MIT admission officers")
+    engine.say(f"Welcome to the stream {user.name}")
     engine.runAndWait()
 
 # These lines run the bot
